@@ -7,8 +7,8 @@ const utilitiesFunction = async () => {
         console.log(gasprice);
         const gasPriceConvert = web3.utils.fromWei(gasprice, 'ether');
         console.log("Gas Price in Ether :" + gasPriceConvert);
-        console.log(web3.utils.sha3("Kashif Nawaz"));
-        console.log(web3.utils.keccak256("Kashif Nawaz"));
+        console.log(web3.utils.sha3("Zaeem Tariq"));
+        console.log(web3.utils.keccak256("Zaeem Tariq"));
         console.log(web3.utils.sha3("20"));
         console.log(web3.utils.keccak256("20"));
         console.log(web3.utils.randomHex(12));
