@@ -15,8 +15,4 @@ fullBalance = async () => {
 }
 fullBalance();
 
-/*web3.eth.getBalance(account, (err, wei)=> {
-    console.log("Balance in wei", wei);
-    balance = web3.utils.fromWei(wei, 'ether');
-    console.log("Balance in Ether", balance);
-})*/
+
