@@ -43,10 +43,3 @@ const getData = async () => {
 }
 getData();
 
-/*const contractAddress = "0xdcc98e910B692722C0e389b900624830989A1d2B";
-const contract = new web3.eth.Contract(ABI,contractAddress);
-contract.methods.retrieve().call((err,result)=>{
-    if(!err){
-        console.log("Result from contract", result);
-    }
-})*/
