@@ -9,38 +9,6 @@ const byteCode = "608060405234801561001057600080fd5b5061019c806100206000396000f3
 const byteCodeBuffer = Buffer.from(byteCode, "hex");
 const privatekeyBuffer = Buffer.from(privatekey, "hex");
 
-/*
-web3.eth.getTransactionCount(account, (error, txCount)=>{
-    console.log(txCount);
-    if (error){
-        console.log("Error", error)
-    }
-    else{
-        const txObj = {
-            nonce: web3.utils.toHex(txCount),
-            data: byteCodeBuffer,
-            gasLimit:  web3.utils.toHex(1000000),
-            gasPrice:  web3.utils.toHex(web3.utils.toWei("10","gwei"))
-        }
-        const tx = new Tx(txObj, { chain: "ropsten", hardfork: "petersburg" });
-        tx.sign(privatekeyBuffer);
-        const serializedTx = tx.serialize();
-        const raw = "0x" + serializedTx.toString('hex');
-        web3.eth.sendSignedTransaction(raw, (error, txHash)=>{
-            if(error){
-                console.log("Transaction error", error)
-            }
-            else{
-                console.log("Transaction hash", txHash)
-            }
-
-
-        }).then(receipt =>{
-            console.log("Transaction receipt", receipt);
-        })
-    }
-})
-*/
 const deployFunction = async () => {
     try {
         const txCount = await web3.eth.getTransactionCount(account);
